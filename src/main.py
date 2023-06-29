@@ -45,7 +45,6 @@ def main():
                         pass
             except Exception as e:  # exception is raised if code is invalid
                 print(f'Code for {filename} is invalid: {e}')
-                raise e
             print(f'Done processing {filename}!')
 
 
