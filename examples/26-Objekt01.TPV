@@ -1,0 +1,24 @@
+REM  zkouska
+SIZE 580,510
+INT top,x,y,s ,a,b,v,p,u
+
+
+line black,10,10,10,500,2
+line black,10,10,510,10,2
+line black,510,10,560,60,2
+
+
+line black,60,60,560,60,2
+line black,60,60,60,440,2
+
+line black,10,500,560,500,2
+line black,560,60,560,500,2
+line black,60,60,120,120,2
+line black,120,120,120,440,2
+line black,120,120,480,120,2
+line black,60,440,480,440,2
+line black,480,440,480,120,2
+
+stop
+
+

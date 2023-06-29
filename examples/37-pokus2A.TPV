@@ -1,0 +1,39 @@
+REM  graf druhe a treti mocniny. Ve výrazu jsou hodne velka cisla.
+SIZE 800,600
+INT top,x0,x1,y0,y1,x,y
+y0=0
+x0=0
+x1=10
+while 801-x1
+	y1=x1*x1*600/640000
+	LINE red,x0,y0,x1,y1,2
+	y0=y1
+	x0=x1
+	x1=x1+20
+loop
+rem dfdfdfdfdfdf
+y0=0
+x0=0
+x1=10
+while 801-x1
+
+y1=600*x1*x1*x1/(800*800*800)
+	LINE black,x0,y0,x1,y1,2
+	y0=y1
+	x0=x1
+	x1=x1+20
+loop
+
+y0=0
+x0=0
+x1=10
+while 801-x1
+
+y1=300*(x1*x1*x1/(800*800*800))
+	LINE blue,x0,y0,x1,y1,2
+	y0=y1
+	x0=x1
+	x1=x1+20
+loop
+
+STOP

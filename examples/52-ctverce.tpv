@@ -1,0 +1,16 @@
+REM ctverce
+SIZE 500, 500
+IDX = 4
+while IDX
+if IDX - 2
+X = IDX * 80
+Y = IDX * 80
+rect green, X, Y, 50, 50, 0
+ELSE
+X = IDX * 80
+Y = IDX * 80
+rect lime, X, Y, 50, 50, 0
+ENDIF
+IDX = IDX - 1
+loop
+stop

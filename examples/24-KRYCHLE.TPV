@@ -1,0 +1,27 @@
+REM zkouska
+SIZE 800,600
+INT top,x,y,z,b,rovn0,rovn1,y2,x2,y1,x1,v,l,l1,vyska,posun,sy,sx,sv,vitr
+
+z=00
+
+rect gray, 0,0,800,600,0
+while 800-z
+while 800-x
+line black,x,z,x+25,z+25,1
+line black,x+25,z+25,x+50,z,1
+
+line red,x,z+50,x+25,z+25,1
+line red,x+25,z+25,x+50,z+50,1
+
+line blue,x,z+50,x,z+75,1
+line blue,x+25,z+25,x+25,z+50,1
+
+line green,x,   z+75,x+25,z+50,1
+line green,x+25,z+50,x+50,z+75,1
+
+x=x+50
+loop
+x=0
+z=z+120
+loop
+stop

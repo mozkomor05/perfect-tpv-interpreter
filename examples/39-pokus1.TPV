@@ -1,0 +1,16 @@
+REM  zkouska cary while
+SIZE 800,600
+int top,a,b,c,z,x1,x2,x,y,y1,y2,i,n,pulka
+rect blue,0,0,800,600,0
+x=12
+y=240
+z=500
+c=300
+while x
+line black,0,0,400,x*50,1
+
+line black,400,x*50,800,0,1
+
+x=x-1
+loop
+STOP

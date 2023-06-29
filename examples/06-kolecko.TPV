@@ -1,0 +1,17 @@
+REM Kolecko
+SIZE 801,601
+INT pocet,krok,i
+
+pocet = 72
+krok = 360 / pocet
+
+i = 0
+
+while 360 - i
+
+line green,400+200*sin(i),300+200*cos(i),400+200*sin(i+krok),300+200*cos(i+krok),1
+
+i = i + krok;
+
+LOop
+top

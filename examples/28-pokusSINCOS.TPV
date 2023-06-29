@@ -1,0 +1,51 @@
+REM  zkouska
+SIZE 800,600
+INT top,x,y,z,b
+x=0
+rem white, black, red, blue, magenta, orange, brown, gray, gold,green,lime
+rect lime, 0,0,800,600,0
+b=0
+while 805-x
+   z=(x-400)*180/400
+   y=sin(z)*250
+   line black,x,300,x,y+300,2
+   y=cos(z)*250
+   b=b+1
+   if b-9
+      b=1
+      line white,x+2,300,x+2,y+300,2
+   else
+      if b-8
+         line black,x+2,300,x+2,y+300,2
+      else
+         if b-7
+            line red,x+2,300,x+2,y+300,2
+         else
+            if b-6
+               line blue,x+2,300,x+2,y+300,2
+            else
+           if b-5
+               line magenta,x+2,300,x+2,y+300,2
+            else
+           if b-4
+               line orange,x+2,300,x+2,y+300,2
+            else
+           if b-3
+               line brown,x+2,300,x+2,y+300,2
+            else
+            if b-2
+               line gray,x+2,300,x+2,y+300,2
+            else
+               line black,x+2,300,x+2,y+300,2
+            endif
+            endif
+            endif
+            endif
+            endif
+         endif
+      endif
+   endif
+   x=x+10
+loop
+
+STOP

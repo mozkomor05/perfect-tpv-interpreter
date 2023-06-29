@@ -1,0 +1,10 @@
+REM kruhy2
+SIZE 500, 500
+IDX = 5
+while IDX
+X = IDX * 80
+Y = IDX * 80
+oval lime, X, Y, 50, 50, 0
+IDX = IDX - 1
+loop
+stop

@@ -1,0 +1,36 @@
+REM Kolecka
+INT pocet,krok,r,w,i
+
+SIZE 801,601
+
+pocet = 72
+krok = 360 / pocet
+
+r = 200
+w = 1
+
+while r
+
+i = 0
+
+rem suda / licha ma jinou tloustku cary
+if 5 - w
+w = 5
+else
+w = 1
+endif
+
+while 360 - i
+
+
+line gold,400+r*sin(i),300+r*cos(i),400+r*sin(i+krok),300+r*cos(i+krok),w
+
+i = i + krok;
+
+loop
+
+r = r - 20
+
+loop
+
+stop

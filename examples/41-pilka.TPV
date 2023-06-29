@@ -1,0 +1,14 @@
+REM  zkouska
+SIZE 800,600
+INT top,x,y,v
+y=20
+while 801-v
+line red, 0,v,800,v+y,2
+line blue ,0,v+y+y,800,v+y,2
+v=v+2*y
+loop
+
+
+
+
+stop

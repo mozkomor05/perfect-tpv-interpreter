@@ -1,0 +1,113 @@
+REM zkouska
+SIZE 800,600
+INT top,x,y,z,b,rovn0,rovn1,y2,x2,y1,x1,v
+x=0
+b=0
+
+
+
+rect lime, 0,0,800,600,0
+
+
+b=9
+while b
+push 40+b*80,0,300,400
+call kreslicaru
+b=b-1
+loop
+
+
+stop
+
+procedure rovno
+pop rovn0,rovn1
+if rovn0-rovn1
+ push 0
+else
+ if rovn1-rovn0
+ push 0
+ else
+ push 1
+ endif
+endif
+return
+
+procedure upravbarvu
+ b=b+1
+ if b-10
+ b=0
+ endif
+ return
+
+procedure kreslicaru
+pop y2,x2,y1,x1
+
+push b,9
+call rovno
+pop v
+if v
+ line white,x1,y1,x2,y2,4
+ return
+endif
+push b,8
+call rovno
+pop v
+if v
+ line black,x1,y1,x2,y2,4
+ return
+endif
+push b,7
+call rovno
+pop v
+if v
+ line red,x1,y1,x2,y2,4
+ return
+endif
+ push b,6
+ call rovno
+ pop v
+ if v
+ line blue,x1,y1,x2,y2,4
+ return
+endif
+ push b,5
+ call rovno
+ pop v
+ if v
+ line magenta,x1,y1,x2,y2,4
+ return
+endif
+ push b,4
+ call rovno
+ pop v
+ if v
+ line orange,x1,y1,x2,y2,4
+ return
+endif
+ push b,3
+ call rovno
+ pop v
+ if v
+ line brown,x1,y1,x2,y2,4
+ return
+endif
+ push b,2
+ call rovno
+ pop v
+ if v
+ line gray,x1,y1,x2,y2,4
+ return
+endif
+push b,1
+call rovno
+pop v
+if v
+   line gold,x1,y1,x2,y2,4
+ return
+endif
+if b
+   line green,x1,y1,x2,y2,4
+else
+   line lime,x1,y1,x2,y2,4
+endif
+return

@@ -1,0 +1,27 @@
+REM zkouska
+SIZE 500,500
+INT top,l,x,y,b,r
+rect gray, 0,0,500,500,0
+X=50
+Y=50
+l=64
+b=0
+r=0
+while l
+if b
+b=0
+rect green,x,y,50,50,0
+else
+b=1
+rect black,x,y,50,50,1
+endif
+x=x+50
+if x-400
+r=r+1
+b=1-b
+x=50
+y=y+50
+endif
+l=l-1
+loop
+stop

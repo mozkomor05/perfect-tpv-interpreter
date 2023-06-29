@@ -1,0 +1,26 @@
+REM zkouska
+SIZE 800,600
+INT top,x,y,z,b,i,s,j
+s=400+27
+
+
+rect gray, 0,0,800,600,0
+j=0
+while 6-j
+i=1
+while 7-i
+rect gold,s+54*i-51-54,54*i-51+j*54,54,54,0
+i=i+1
+loop
+i=1
+if 5-j
+while 6-i
+rect red,s+54*i-51-54,54*i+3+j*54,54,54,0
+i=i+1
+loop
+endif
+s=s-54
+j=j+1
+loop
+stop
+

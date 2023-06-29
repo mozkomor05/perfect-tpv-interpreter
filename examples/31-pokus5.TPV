@@ -1,0 +1,13 @@
+REM  zkouska  elipsy
+SIZE 800,600
+INT top,x0,x1,y0,y1,x,y
+
+
+OVAL black, 0,00,800,600,2
+OVAL green, 10,10,780,580,0
+
+OVAL white, 50,50,700,500,0
+
+OVAL black, 100,100,600,400,2
+OVAL red, 110,110,580,380,0
+STOP

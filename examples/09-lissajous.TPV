@@ -1,0 +1,18 @@
+SIZE 801,601
+INT pocet,krok,i,kx,ky
+pocet = 1000
+krok = 360 / pocet
+
+i = 0
+
+kx = 15
+ky = 17
+
+while 360 - i
+
+line white,400+200*sin(i*kx),300+200*cos(i*ky),400+200*sin((i+krok)*kx),300+200*cos((i+krok)*ky),1
+
+i = i + krok;
+
+loop
+stop

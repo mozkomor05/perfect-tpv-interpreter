@@ -1,0 +1,16 @@
+REM zkouska
+SIZE 800,600
+INT top,l
+rect gray, 0,0,800,600,0
+l=10
+while l
+l=l-1
+line red, l*50,0,350+l*50,600,2
+loop
+l=800
+while l
+l=l-50
+line black, l,0,800,800-l,2
+loop
+stop
+

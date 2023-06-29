@@ -1,0 +1,21 @@
+ REM zkouska
+SIZE 800,600
+INT top,x,y,r,x1,y1,s1,s2,delta
+s1=405
+s2=300
+
+rect gray, 0,0,800,600,0
+x=s1
+y=s2
+delta=10
+r=10
+while 3660-r
+x1=s1+r*sin(r)*4/35
+y1=s2+r*cos(r)/30
+r=r+delta
+line black,x,y,x1,y1,2
+x=x1
+y=y1
+loop
+stop
+

@@ -1,0 +1,32 @@
+SIZE 801,601
+
+krok = 100
+
+y2 = 100
+while 501 - y2
+
+y1 = 100
+while 501 - y1
+line red, 0,y1,800,y2,1
+y1=y1+ krok
+loop
+
+y2=y2+krok
+
+loop
+
+REM ###############################################################################################
+
+x2 = 100
+while 701 - x2
+
+x1 = 100
+while 701 - x1
+line red, x1,0,x2,600,1
+x1=x1+ krok
+loop
+
+x2=x2+krok
+
+loop
+stop

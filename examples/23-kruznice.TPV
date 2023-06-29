@@ -1,0 +1,13 @@
+REM  zkouska
+SIZE 800,600
+INT top,x,y,v,r
+r=200
+
+while r-2
+oval blue, 400-r,r,2*r,2*r,r/50+1
+r=r*707/1000
+loop
+ 
+
+
+stop

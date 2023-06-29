@@ -1,0 +1,17 @@
+SIZE 800,600
+
+INT x,krok,y2,y1
+
+x = 0
+WHILE 800 - X
+LINE blue,X,0,X,600,1
+x=x+10 
+LOOP
+
+y = 0
+WHILE 600 - y
+LINE blue,0,y,800,y,1
+y=y+10 
+LOOP
+
+

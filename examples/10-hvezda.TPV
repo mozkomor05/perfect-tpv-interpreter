@@ -1,0 +1,22 @@
+SIZE 801,601
+INT cipu,r1,r2,krok,pulkrok,i
+
+cipu = 10
+r1 = 80
+r2 = 200
+
+krok = 360 / cipu
+pulkrok = krok / 2
+
+i = 0
+
+WHILE 360 - i
+
+
+line blue, 400+r1*sin(i-pulkrok),300+r1*cos(i-pulkrok),400+r2*sin(i),300+r2*cos(i),1
+line blue, 400+r1*sin(i+pulkrok),300+r1*cos(i+pulkrok),400+r2*sin(i),300+r2*cos(i),1
+
+i = i + krok;
+
+LOOP
+stop

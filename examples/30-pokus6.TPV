@@ -1,0 +1,18 @@
+REM  zkouska
+size 600,600
+INT top,x,y,s,v
+y=0
+x=0  
+s=600
+v=600
+push x,y,s,v
+while top
+	pop v,s,y,x
+        rect red,x,y,s,v,2 
+	if  v-8
+	push x/2,y/2,s/2,v/2
+        push 600-x/2,600-y/2,s/2,v/2  
+        endif
+loop
+
+STOP

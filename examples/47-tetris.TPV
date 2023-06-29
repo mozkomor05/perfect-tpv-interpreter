@@ -1,0 +1,58 @@
+REM  zkouska
+SIZE 800,600
+INT top,x,y,s ,a,b,v,p,u
+ v=60
+push 1,1,1,-1
+   call nahled
+push 1,10,2,2
+   call nahled
+push 0,6,5,-2
+   call nahled
+push 0,1,5,-2
+   call nahled
+push 0,2,3,-3
+   call nahled
+push 0,2,1,1
+   call nahled
+push 0,5,2,-2
+   call nahled 
+push 0,7,1,2
+   call nahled
+push 0,6,3,2
+   call nahled
+push 0,3,4,2
+   call nahled
+stop
+
+
+procedure nahled
+pop u,a,b,s
+x=b*(v+2)
+y=a*(v+2)
+
+if s
+   rect magenta,x,y,v,v*4+4,0
+   call svisle
+else
+   call vodorovne
+endif
+return
+
+procedure vodorovne
+   if u
+      rect blue,x,y,4*v+4,v,0   
+      rect blue ,x+v*(u-1)+u+v,y+v ,v,v+3,0
+   else
+     rect green,x,y,4*v+4,v,0
+     rect green ,x-v*(u+1)-u,y-v-1 ,v,v+3,0
+   endif
+return
+
+
+procedure svisle
+   if u
+       rect magenta,x-v,y+v*u+4 ,v,v,0
+   else
+       rect magenta ,x+v,y-v*u+1,v,v+2,0
+   endif
+return

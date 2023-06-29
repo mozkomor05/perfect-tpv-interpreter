@@ -1,0 +1,62 @@
+REM zkouska  vnorene IF
+SIZE 800,600
+INT top,x,y,z,b
+x=0
+rem white, black, red, blue, magenta, orange, brown, gray, gold,green,lime
+rect lime, 0,0,800,300,0
+rect gray, 0,300,800,300,0
+x=5
+b=10
+  rect black,100,29,100,100,5
+while 805-x
+ b=b+1
+ if b-10
+    b=0
+ endif
+ 
+ if b-9
+    line white,x,00,x,600,4
+ else
+    if b-8
+       line black,x,00,x,600,4
+    else
+       if b-7
+           line red,x,00,x,600,4
+       else
+           if b-6
+              line blue,x,00,x,600,4
+           else
+              if b-5
+                 line magenta,x,00,x,600,4
+              else
+                 if b-4
+                    line orange,x,00,x,600,4
+                 else
+                    if b-3
+                       line brown,x,00,x,600,4
+                    else
+                       if b-2
+                          line gray,x,00,x,600,4
+                       else
+                          if b-1
+                                line gold,x,00,x,600,4
+                           else  
+                                if b
+                                    line green,x,00,x,600,4
+                                else
+                                    line lime,x,00,x,600,4
+                                    rect black,x,295,10,10,0
+                                endif
+                          endif
+                       endif
+                    endif
+                 endif
+              endif
+           endif
+       endif
+    endif
+ endif
+ x=x+20
+loop
+
+STOP

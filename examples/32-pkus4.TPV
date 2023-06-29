@@ -1,0 +1,21 @@
+REM  zkouska  elipsy  obdelniky cary
+SIZE 800,600
+INT top,x0,x1,y0,y1,x,y
+LINE red,0,0,400,300,2
+line black , 400,0,400,300,2
+line black , 450,0,400,300,2
+line black , 500,0,400,300,2
+line black , 550,0,400,300,2
+line black , 600,0,400,300,2
+line black , 650,0,400,300,2
+line black , 700,0,400,300,2
+line black , 750,0,400,300,2
+line black , 800,0,400,300,2
+
+OVAL black, 00,300,400,300,2
+OVAL green, 10,310,380,280,0
+
+rect  black, 400,300,400,300,2
+rect  green, 410,310,380,280,0
+
+STOP

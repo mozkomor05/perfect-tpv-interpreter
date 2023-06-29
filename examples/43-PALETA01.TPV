@@ -1,0 +1,43 @@
+REM  zkouska
+SIZE 800,600
+INT top,x,y,z,b
+x=0
+rem white rgb(255,255,255)
+rem black rgb(0,0,0)
+rem red rgb(255,0,0)
+rem blue rgb(0,0,255)
+rem magenta rgb(255,0,255)
+rem orange rgb(255,165,0)
+rem brown rgb(165,42,42)
+rem gray rgb(128,128,128)
+rem gold rgb(255,215,0)
+rem green rgb(0,128,0)
+rem lime rgb(0,255,0)
+
+rect grey, 0,0,800,600,0
+ rect lime, 0,0,800,600,0
+ rect black, 0,0,800,600,1
+
+b=0
+ rect white, 50,250,100,100,0
+ rect black, 350,250,100,100,0
+ rect lime, 660,250,100,100,0
+ rect black, 660,250,100,100,3
+
+ rect blue, 160,400,100,100,0
+ rect magenta, 160,100,100,100,0
+
+ rect orange, 540,400,100,100,0
+ rect brown, 540,100,100,100,0
+
+ rect gray, 300,40,100,100,0
+ rect green, 300,460,100,100,0
+
+ rect gold, 400,40,100,100,0
+ rect red, 400,460,100,100,0
+
+
+
+
+
+stop

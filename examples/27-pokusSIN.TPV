@@ -1,0 +1,15 @@
+REM  zkouska
+size 800,600
+INT top,x,y,z
+x=0
+
+while 805-x
+
+
+z=(x-400)*180/800
+y=sin(z)*250
+line black,x,300,x,y+300,2
+x=x+10
+loop
+
+STOP

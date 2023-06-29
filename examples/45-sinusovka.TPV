@@ -1,0 +1,13 @@
+REM  zkouska
+SIZE 800,600
+INT top,x1,y1,s,x2,y2,a,b,v,p,u
+while 798-x1
+x2=x1+10
+y2=x2*x2
+y2=sin(y2)*250
+line black,x1,300+y1,x2,y2+300,1
+x1=x2
+y1=y2
+x1=x1+1
+loop
+stop

@@ -1,0 +1,25 @@
+REM zkouska
+SIZE 800,600
+INT top,h,x,y,h1,x1,y1
+rect gray, 0,0,800,600,0
+push 300,300,300
+h=150
+while top
+  call kresli
+  h=h/2
+  if h-16
+    push x-h,y-h,h
+     push x+h,y-h,h
+   push x  ,y+h,h
+  endif
+loop
+stop
+
+
+procedure kresli
+pop  h,y,x
+oval red,x-5,y-5,10,10,1
+line black, x-h,y-h,x+h,y-h,1
+line black, x-h,y-h,x,  y+h,1
+line black, x,  y+h,x+h,y-h,1
+return

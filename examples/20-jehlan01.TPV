@@ -1,0 +1,32 @@
+REM  zkouska
+SIZE 600,600
+INT top,x1,x2,y1,y2,v1,v2,s1,s2,a,x,y,v,i
+
+ x1=10
+ y1=10
+ v=580
+call nahled
+
+stop
+procedure nahled
+
+rect magenta,x1+v*3/8,y1+v*3/8,v/4,v/4,0
+rect red,x1+v*3/8,y1+v*3/8,v/4,v/4,4
+i=x1+v*3/8-10 
+
+while i
+ line gold, x1+v*3/8-i,         y1+v*3/8-i  ,    x1+v*3/8-i,     y1+v*5/8+i ,4
+ line blue,x1+v-(v*3/8-i),      y1+v*3/8-i  ,    x1+v*3/8-i,     y1+v-(v*5/8+i) ,4
+ line green,x1+v-(v*3/8-i),     y1+v-(v*3/8-i)  ,x1+v-(v*3/8-i), y1+v-(v*5/8+i) ,4
+
+
+i=i-3
+loop
+rect red,x1,y1,v,v,4
+
+line red,x1,   y1 ,  x1+v*3/8,y1+3*v/8,4
+line red,x1+v ,y1,x1+v-3*v/8,y1+3*v/8,4
+line red,x1   ,y1+v  ,x1+3*v/8,y1+v-3*v/8,4
+line red,x1+v ,y1+v,  x1+v-3*v/8,y1+v-3*v/8,4
+ 
+return

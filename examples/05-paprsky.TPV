@@ -1,0 +1,16 @@
+REM Paprsky
+INT pocet, i
+SIZE 801,601
+
+pocet = 72
+
+i = 0
+
+while 360 - i
+
+line blue,400,300,400+200*sin(i),300+200*cos(i),1
+
+i = i + 360 / pocet;
+
+loop
+stop
