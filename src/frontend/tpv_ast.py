@@ -57,7 +57,7 @@ class UnaryExpression(Expression):
         self.expression = expression
 
 
-class CallExpression(Expression):
+class CallFn(Expression):
     """
     Represents a function call, e.g. `sin(90)`.
     To not be confused with procedure CALL command which is a statement.
@@ -66,6 +66,25 @@ class CallExpression(Expression):
     def __init__(self, name: Identifier, args: list[Expression]):
         self.name = name
         self.args = args
+
+
+class CallProcedure(Statement):
+    """
+    Represents a procedure call, e.g. `CALL foo`.
+    """
+
+    def __init__(self, name: Identifier):
+        self.name = name
+
+
+class Return(Statement):
+    def __init__(self):
+        pass
+
+
+class IntDeclaration(Statement):
+    def __init__(self, vars: list[Identifier]):
+        self.vars = vars
 
 
 class IfBlock(Statement):
@@ -97,3 +116,13 @@ class Command(Statement):
     def __init__(self, command: Identifier, args: list[Expression]):
         self.command = command
         self.args = args
+
+
+class PushStack(Statement):
+    def __init__(self, args: list[Expression]):
+        self.args = args
+
+
+class PopStack(Statement):
+    def __init__(self, vars: list[Identifier]):
+        self.vars = vars

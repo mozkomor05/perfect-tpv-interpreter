@@ -10,6 +10,7 @@ class TokenType(Enum):
     BinaryOperator = auto()
 
     # Keywords
+    Int = auto()
     If = auto()
     Else = auto()
     Endif = auto()
@@ -17,6 +18,9 @@ class TokenType(Enum):
     Endwhile = auto()
     Procedure = auto()
     Return = auto()
+    Call = auto()
+    Push = auto()
+    Pop = auto()
 
     Comma = auto()
 
@@ -25,6 +29,7 @@ class TokenType(Enum):
 
 
 KEYWORDS = {
+    'int': TokenType.Int,
     'if': TokenType.If,
     'else': TokenType.Else,
     'endif': TokenType.Endif,
@@ -32,6 +37,9 @@ KEYWORDS = {
     'loop': TokenType.Endwhile,
     'procedure': TokenType.Procedure,
     'return': TokenType.Return,
+    'call': TokenType.Call,
+    'push': TokenType.Push,
+    'pop': TokenType.Pop,
 }
 
 
@@ -58,11 +66,16 @@ class Lexer:
         self.pos += 1
         self.ch = self.text[self.pos] if self.pos < len(self.text) else ''
 
+    def eat_whitespace(self):
+        while self.ch != '':
+            if self.ch in [' ', '\t', '\r']:
+                self.next_char()
+            else:
+                break
+
     def get_next_token(self):
         while self.ch != '':
-            if self.ch in [' ', '\t', '\r', ';']:
-                self.next_char()
-                continue
+            self.eat_whitespace()
 
             SINGLE_CHAR_TOKENS = {
                 TokenType.EOL: ['\n'],
@@ -116,6 +129,9 @@ class Lexer:
 
     def tokenize(self):
         tokens = []
+
+        self.text = self.text.replace(';', '\n')
+
         while True:
             token = self.get_next_token()
             tokens.append(token)

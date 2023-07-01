@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os
-from interpreter import Interpreter
+from runtime.interpreter import Interpreter
 
 
 def valid_path(string):
@@ -36,14 +36,12 @@ def main():
                 interpreter = Interpreter(file.read())
                 im = interpreter.run()
 
-                if im is not None:
-                    im.save(os.path.join(
-                        args.directory, filename[:-4] + '.png'))  # save file to same folder
-                    try:
-                        im.show()
-                    except Exception:
-                        pass
-            except Exception as e:  # exception is raised if code is invalid
+                im.save(os.path.splitext(filename)[0] + '.png')
+                try:
+                    im.show()
+                except Exception:
+                    pass
+            except Exception as e:
                 print(f'Code for {filename} is invalid: {e}')
             print(f'Done processing {filename}!')
 
