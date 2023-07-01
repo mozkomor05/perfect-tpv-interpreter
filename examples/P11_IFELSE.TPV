@@ -1,0 +1,38 @@
+REM  zkouska
+int i
+SIZE 800,600
+i=10
+if i
+line white ,10,50,790,550,4
+line black ,30,50,790,550,4
+line red ,50,50,790,550,4
+line blue ,80,50,790,550,4
+line magenta ,110,50,790,550,4
+else
+line orange ,130,50,790,350,4
+line brown,170,50,790,350,4
+line gray ,200,50,790,350,4
+line gold ,210,50,790,350,4
+line green ,250,50,790,350,4
+line lime ,310,50,790,350,4
+
+endif
+ I=0
+if i
+line white ,10,150,790,550,4
+line black ,30,150,790,550,4
+line red ,50,150,790,550,4
+line blue ,80,150,790,550,4
+line magenta ,110,50,790,550,4
+else
+line orange ,130,150,790,350,4
+line brown,170,150,790,350,4
+line gray ,200,150,790,350,4
+line gold ,210,150,790,350,4
+line green ,250,150,790,350,4
+line lime ,310,150,790,350,4
+
+endif
+ 
+
+stop

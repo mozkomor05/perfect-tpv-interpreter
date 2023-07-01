@@ -1,5 +1,6 @@
 REM ctverce
 SIZE 500, 500
+int idx,x,y
 IDX = 4
 while IDX
 if IDX - 2

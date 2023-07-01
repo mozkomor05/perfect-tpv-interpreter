@@ -14,4 +14,4 @@ line green,400+200*sin(i),300+200*cos(i),400+200*sin(i+krok),300+200*cos(i+krok)
 i = i + krok;
 
 LOop
-top
+stop

@@ -1,0 +1,16 @@
+size 600,600
+int x,y,z,i,j,k,l
+
+I=500
+call caru
+stop
+
+
+procedure caru
+line black,0,i,800,i,2
+i=i/2
+if i - 10
+   call caru
+endif
+return
+

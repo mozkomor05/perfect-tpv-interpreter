@@ -1,0 +1,25 @@
+SIZE 800,600
+
+INT uhel,x,krok
+
+LINE gold,400,0,400,600,1
+
+LINE gold, 0,300,800,300,1
+
+uhel = 0
+krok = 3
+
+while 360-uhel
+x=uhel+krok
+line red, 800*uhel/360,300+300*sin(uhel),800*(uhel+krok)/360,300+300*sin(x),1
+
+if 1
+
+line green, 800*uhel/360,300+300*sin(uhel),800*(uhel)/360,300,1
+
+endif
+
+uhel = uhel + krok
+
+loop
+stop

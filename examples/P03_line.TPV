@@ -1,0 +1,6 @@
+REM  zkouska
+SIZE 800,600
+
+line red,10,50,790,550,4
+
+stop

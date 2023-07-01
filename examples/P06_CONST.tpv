@@ -1,0 +1,7 @@
+SIZE 400,400
+INT I
+I=25
+
+line black,i,i,300,330,4
+
+stop

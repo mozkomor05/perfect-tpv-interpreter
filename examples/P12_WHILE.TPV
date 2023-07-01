@@ -1,0 +1,13 @@
+REM  zkouska
+int i
+SIZE 800,600
+i=10
+while 500-I
+line black ,i,50,790,550,4
+i=60+I
+loop
+
+
+ 
+
+stop

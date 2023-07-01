@@ -1,5 +1,6 @@
 REM kruhy2
 SIZE 500, 500
+INT idx,x,y
 IDX = 5
 while IDX
 X = IDX * 80

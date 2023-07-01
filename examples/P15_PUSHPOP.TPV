@@ -1,0 +1,18 @@
+REM  zkouska
+SIZE 600,600
+INT top,x1,x2,y1,y2,v1,v2,s1,s2,a,x,y,v
+line blue ,1,1,599,599,3
+
+push 599+142
+while top
+   pop v
+   x=v
+   x1=x*807/1000
+   line black,x1,0,x1,y+v*807/1000,1
+   line black,x1-(x-x1)*807/1000,0,x1,y+v*807/1000,1
+   if v-10
+   push x*807/1000 
+   endif
+
+loop
+stop

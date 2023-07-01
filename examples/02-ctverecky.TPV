@@ -1,6 +1,6 @@
 SIZE 800,600
 
-INT x,krok,y2,y1
+INT x,krok,y2,y1,y
 
 x = 0
 WHILE 800 - X

@@ -1,0 +1,18 @@
+REM  zkouska
+SIZE 800,600
+line white ,10,50,790,550,4
+line black ,30,50,790,550,4
+line red ,50,50,790,550,4
+line blue ,80,50,790,550,4
+line magenta ,110,50,790,550,4
+line orange ,130,50,790,550,4
+line brown,170,50,790,550,4
+line gray ,200,50,790,550,4
+line gold ,210,50,790,550,4
+line green ,250,50,790,550,4
+line lime ,310,50,790,550,4
+
+
+ 
+
+stop

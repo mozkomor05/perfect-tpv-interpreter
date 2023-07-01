@@ -1,5 +1,5 @@
 SIZE 801,601
-
+INT krok,y2,y1,x2,x1
 krok = 100
 
 y2 = 100

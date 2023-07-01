@@ -1,0 +1,31 @@
+REM  zkouska
+int i
+SIZE 800,600
+i=10
+
+line white ,i,50,790,550,4
+i=60+I
+line black ,i,50,790,550,4
+i=60+I
+line red ,i,50,790,550,4
+i=60+I
+line blue ,i,50,790,550,4
+i=60+I
+line magenta ,i,50,790,550,4
+i=60+I
+line orange ,i,50,790,350,4
+i=60+I
+line brown,i,50,790,350,4
+i=60+I
+line gray ,i,50,790,350,4
+i=60+I
+line gold ,i,50,790,350,4
+i=60+I
+line green ,i,50,790,350,4
+i=60+I
+line lime ,i,50,790,350,4
+
+
+ 
+
+stop

@@ -1,7 +1,7 @@
 size 800,600
 
 push  400,200
-
+int i200,i400
 pop i200,i400
 
 line blue,i400,0,i400,600,10

@@ -1,0 +1,7 @@
+REM  zkouska
+SIZE 800,600
+
+rect red,10,50,780,500,4
+rect green,100,150,600,300,0
+
+stop
